@@ -1,4 +1,4 @@
 .tmux.conf
 .config/fish/
-.config/opencode/
+.config/opencode/agent/
 .config/nvim/
