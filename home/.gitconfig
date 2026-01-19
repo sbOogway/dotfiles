@@ -1,0 +1,7 @@
+[user]
+	email = mattiapapaccioli@gmail.com
+	name = Mattia Papaccioli
+[credential]
+	helper = store
+[alias]
+	logline = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --all
