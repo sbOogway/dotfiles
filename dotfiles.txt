@@ -3,3 +3,4 @@
 .config/opencode/agent/
 .config/nvim/
 .gitconfig
+import-passwords.py
