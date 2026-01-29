@@ -1,7 +1,10 @@
 [user]
 	email = mattiapapaccioli@gmail.com
 	name = Mattia Papaccioli
+  signingkey = 9E9EAAE5ADB6A717E10C10FF2DEA979EC392CBEF
 [credential]
 	helper = store
 [alias]
 	logline = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --all
+[commit]
+	gpgsign = true
