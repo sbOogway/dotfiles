@@ -1,7 +1,25 @@
 [user]
-	email = mattiapapaccioli@gmail.com
+	email = 92176188+sbOogway@users.noreply.github.com
 	name = Mattia Papaccioli
-[credential]
-	helper = store
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
 [alias]
 	logline = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --all
+  ll = log --graph --pretty=format:'%Cred%h%Creset %x09 %C(white)%<(30,trunc)%s%Creset %x09 %C(bold blue)%<(15,trunc)%an%Creset %x09 %Cgreen%<(15)%cr%Creset %x09 %C(auto)%d%Creset' --abbrev-commit --all 
+[commit]
+	gpgsign = true
+[core]
+  editor = nvim
+[merge]
+	tool = code
+[push]
+	followTags = true
