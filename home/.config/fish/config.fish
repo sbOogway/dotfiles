@@ -22,3 +22,8 @@ test -r '/home/oogway/.opam/opam-init/init.fish' && source '/home/oogway/.opam/o
 
 # opencode
 fish_add_path /home/oogway/.opencode/bin
+
+if status is-interactive
+    and not set -q TMUX
+    exec tmux new-session -A -s 🐎
+end
