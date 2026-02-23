@@ -5,6 +5,8 @@
 [credential]
 	helper = store
 [alias]
-	logline = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --all
+  logline = log --graph --pretty=format:'%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --all
+  ll = log --graph --pretty=format:'%Cred%h%Creset %x09 %C(white)%<(30,trunc)%s%Creset %x09 %C(bold blue)%<(15,trunc)%an%Creset %x09 %Cgreen%<(15)%cr%Creset %x09 %C(auto)%d%Creset' --abbrev-commit --all
+
 [commit]
 	gpgsign = true
