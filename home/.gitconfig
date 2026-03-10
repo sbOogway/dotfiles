@@ -13,8 +13,8 @@
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 [alias]
-	logline = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --all
-  ll = log --graph --pretty=format:'%Cred%h%Creset %x09 %C(white)%<(30,trunc)%s%Creset %x09 %C(bold blue)%<(15,trunc)%an%Creset %x09 %Cgreen%<(15)%cr%Creset %x09 %C(auto)%d%Creset' --abbrev-commit --all 
+	logline = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%ci) %C(bold blue)<%an>%Creset' --abbrev-commit --all
+  ll = log --graph --pretty=format:'%Cred%h%Creset %x09 %C(black)%<(30,trunc)%s%Creset %x09 %C(bold blue)%<(15,trunc)%an%Creset %x09 %Cgreen%<(15)%ci%Creset %x09 %C(auto)%d%Creset' --abbrev-commit --all 
 [commit]
 	gpgsign = true
 [core]
