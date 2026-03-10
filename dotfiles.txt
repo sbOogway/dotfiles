@@ -4,3 +4,4 @@
 .config/nvim/
 .gitconfig
 import-passwords.py
+.config/autostart/

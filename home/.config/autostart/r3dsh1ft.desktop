@@ -1,0 +1,4 @@
+[Desktop Entry]
+Type=Application
+Name=r3dsh1ft
+Exec=redshift -P -O 2000
